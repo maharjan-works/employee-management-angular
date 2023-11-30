@@ -11,8 +11,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor = "let employee of employeeList; let counter = index">
-            <td>{{counter+1}}</td>
+        <tr *ngFor = "let employee of employeeList; let idx = index">
+            <td>{{idx+1}}</td>
             <td>{{employee.employeeId}}</td>
             <td>{{employee.firstName}}</td>
             <td>{{employee.lastName}}</td>

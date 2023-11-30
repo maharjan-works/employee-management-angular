@@ -32,7 +32,6 @@ export class CreateEmployeeComponent implements OnInit {
 
   onSubmit(){
     this.saveEmployee();
-    
   }
 
 }
