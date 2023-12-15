@@ -21,5 +21,12 @@ export class EmployeeService {
     return this.httpClient.post(`${this.baseURL}`,employee);
   }
 
+  getEmployeeById(employeeId:string):Observable<Employee>{
+    return this.httpClient.get<Employee>(`${this.baseURL}/${employeeId}`);
+  }
+
+  updateEmployee(employeeId: string, employee: Employee): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${employeeId}`, employee);
+  }
   
 }
